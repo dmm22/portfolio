@@ -1,7 +1,9 @@
+import Svg from "./components/Svg"
+
 export default function App() {
   return (
     <div>
-      <p>App</p>
+      <Svg svgName="css" />
     </div>
   )
 }
