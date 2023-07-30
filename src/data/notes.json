@@ -1,0 +1,249 @@
+[
+  {
+    "itemName": ".eslintrc.cjs",
+    "path": ".eslintrc.cjs",
+    "type": "eslint",
+    "url": "https://raw.githubusercontent.com/dmm22/notes/master/.eslintrc.cjs"
+  },
+  {
+    "itemName": ".gitignore",
+    "path": ".gitignore",
+    "type": "gitignore",
+    "url": "https://raw.githubusercontent.com/dmm22/notes/master/.gitignore"
+  },
+  {
+    "itemName": "index.html",
+    "path": "index.html",
+    "type": "html",
+    "url": "https://raw.githubusercontent.com/dmm22/notes/master/index.html"
+  },
+  {
+    "itemName": "package-lock.json",
+    "path": "package-lock.json",
+    "type": "json",
+    "url": "https://raw.githubusercontent.com/dmm22/notes/master/package-lock.json"
+  },
+  {
+    "itemName": "package.json",
+    "path": "package.json",
+    "type": "json",
+    "url": "https://raw.githubusercontent.com/dmm22/notes/master/package.json"
+  },
+  {
+    "itemName": "postcss.config.js",
+    "path": "postcss.config.js",
+    "type": "js",
+    "url": "https://raw.githubusercontent.com/dmm22/notes/master/postcss.config.js"
+  },
+  {
+    "itemName": "public",
+    "path": "public",
+    "type": "dir",
+    "contents": [
+      {
+        "itemName": "vite.svg",
+        "path": "public/vite.svg",
+        "type": "svg",
+        "url": "https://raw.githubusercontent.com/dmm22/notes/master/public/vite.svg"
+      }
+    ]
+  },
+  {
+    "itemName": "readme.md",
+    "path": "readme.md",
+    "type": "md",
+    "url": "https://raw.githubusercontent.com/dmm22/notes/master/readme.md"
+  },
+  {
+    "itemName": "src",
+    "path": "src",
+    "type": "dir",
+    "contents": [
+      {
+        "itemName": "App.tsx",
+        "path": "src/App.tsx",
+        "type": "tsx",
+        "url": "https://raw.githubusercontent.com/dmm22/notes/master/src/App.tsx"
+      },
+      {
+        "itemName": "assets",
+        "path": "src/assets",
+        "type": "dir",
+        "contents": [
+          {
+            "itemName": "app.png",
+            "path": "src/assets/app.png",
+            "type": "png",
+            "url": "https://raw.githubusercontent.com/dmm22/notes/master/src/assets/app.png"
+          },
+          {
+            "itemName": "delete.svg",
+            "path": "src/assets/delete.svg",
+            "type": "svg",
+            "url": "https://raw.githubusercontent.com/dmm22/notes/master/src/assets/delete.svg"
+          },
+          {
+            "itemName": "edit.svg",
+            "path": "src/assets/edit.svg",
+            "type": "svg",
+            "url": "https://raw.githubusercontent.com/dmm22/notes/master/src/assets/edit.svg"
+          },
+          {
+            "itemName": "file.svg",
+            "path": "src/assets/file.svg",
+            "type": "svg",
+            "url": "https://raw.githubusercontent.com/dmm22/notes/master/src/assets/file.svg"
+          },
+          {
+            "itemName": "folder.svg",
+            "path": "src/assets/folder.svg",
+            "type": "svg",
+            "url": "https://raw.githubusercontent.com/dmm22/notes/master/src/assets/folder.svg"
+          },
+          {
+            "itemName": "save.svg",
+            "path": "src/assets/save.svg",
+            "type": "svg",
+            "url": "https://raw.githubusercontent.com/dmm22/notes/master/src/assets/save.svg"
+          },
+          {
+            "itemName": "search.svg",
+            "path": "src/assets/search.svg",
+            "type": "svg",
+            "url": "https://raw.githubusercontent.com/dmm22/notes/master/src/assets/search.svg"
+          }
+        ]
+      },
+      {
+        "itemName": "components",
+        "path": "src/components",
+        "type": "dir",
+        "contents": [
+          {
+            "itemName": "Button.tsx",
+            "path": "src/components/Button.tsx",
+            "type": "tsx",
+            "url": "https://raw.githubusercontent.com/dmm22/notes/master/src/components/Button.tsx"
+          },
+          {
+            "itemName": "Icon.tsx",
+            "path": "src/components/Icon.tsx",
+            "type": "tsx",
+            "url": "https://raw.githubusercontent.com/dmm22/notes/master/src/components/Icon.tsx"
+          },
+          {
+            "itemName": "NoteEditor.tsx",
+            "path": "src/components/NoteEditor.tsx",
+            "type": "tsx",
+            "url": "https://raw.githubusercontent.com/dmm22/notes/master/src/components/NoteEditor.tsx"
+          },
+          {
+            "itemName": "NotePreview.tsx",
+            "path": "src/components/NotePreview.tsx",
+            "type": "tsx",
+            "url": "https://raw.githubusercontent.com/dmm22/notes/master/src/components/NotePreview.tsx"
+          },
+          {
+            "itemName": "SavedNotes.tsx",
+            "path": "src/components/SavedNotes.tsx",
+            "type": "tsx",
+            "url": "https://raw.githubusercontent.com/dmm22/notes/master/src/components/SavedNotes.tsx"
+          },
+          {
+            "itemName": "Searchbar.tsx",
+            "path": "src/components/Searchbar.tsx",
+            "type": "tsx",
+            "url": "https://raw.githubusercontent.com/dmm22/notes/master/src/components/Searchbar.tsx"
+          },
+          {
+            "itemName": "SidePanel.tsx",
+            "path": "src/components/SidePanel.tsx",
+            "type": "tsx",
+            "url": "https://raw.githubusercontent.com/dmm22/notes/master/src/components/SidePanel.tsx"
+          }
+        ]
+      },
+      {
+        "itemName": "contexts",
+        "path": "src/contexts",
+        "type": "dir",
+        "contents": [
+          {
+            "itemName": "NoteContext.tsx",
+            "path": "src/contexts/NoteContext.tsx",
+            "type": "tsx",
+            "url": "https://raw.githubusercontent.com/dmm22/notes/master/src/contexts/NoteContext.tsx"
+          }
+        ]
+      },
+      {
+        "itemName": "data",
+        "path": "src/data",
+        "type": "dir",
+        "contents": [
+          {
+            "itemName": "placeholderNotes.ts",
+            "path": "src/data/placeholderNotes.ts",
+            "type": "ts",
+            "url": "https://raw.githubusercontent.com/dmm22/notes/master/src/data/placeholderNotes.ts"
+          }
+        ]
+      },
+      {
+        "itemName": "index.css",
+        "path": "src/index.css",
+        "type": "css",
+        "url": "https://raw.githubusercontent.com/dmm22/notes/master/src/index.css"
+      },
+      {
+        "itemName": "main.tsx",
+        "path": "src/main.tsx",
+        "type": "tsx",
+        "url": "https://raw.githubusercontent.com/dmm22/notes/master/src/main.tsx"
+      },
+      {
+        "itemName": "types",
+        "path": "src/types",
+        "type": "dir",
+        "contents": [
+          {
+            "itemName": "Note.ts",
+            "path": "src/types/Note.ts",
+            "type": "ts",
+            "url": "https://raw.githubusercontent.com/dmm22/notes/master/src/types/Note.ts"
+          }
+        ]
+      },
+      {
+        "itemName": "vite-env.d.ts",
+        "path": "src/vite-env.d.ts",
+        "type": "ts",
+        "url": "https://raw.githubusercontent.com/dmm22/notes/master/src/vite-env.d.ts"
+      }
+    ]
+  },
+  {
+    "itemName": "tailwind.config.js",
+    "path": "tailwind.config.js",
+    "type": "js",
+    "url": "https://raw.githubusercontent.com/dmm22/notes/master/tailwind.config.js"
+  },
+  {
+    "itemName": "tsconfig.json",
+    "path": "tsconfig.json",
+    "type": "tsconfig",
+    "url": "https://raw.githubusercontent.com/dmm22/notes/master/tsconfig.json"
+  },
+  {
+    "itemName": "tsconfig.node.json",
+    "path": "tsconfig.node.json",
+    "type": "json",
+    "url": "https://raw.githubusercontent.com/dmm22/notes/master/tsconfig.node.json"
+  },
+  {
+    "itemName": "vite.config.ts",
+    "path": "vite.config.ts",
+    "type": "ts",
+    "url": "https://raw.githubusercontent.com/dmm22/notes/master/vite.config.ts"
+  }
+]

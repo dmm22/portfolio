@@ -1,0 +1,187 @@
+[
+  {
+    "itemName": ".eslintrc.cjs",
+    "path": ".eslintrc.cjs",
+    "type": "eslint",
+    "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/.eslintrc.cjs"
+  },
+  {
+    "itemName": ".gitignore",
+    "path": ".gitignore",
+    "type": "gitignore",
+    "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/.gitignore"
+  },
+  {
+    "itemName": "index.html",
+    "path": "index.html",
+    "type": "html",
+    "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/index.html"
+  },
+  {
+    "itemName": "package-lock.json",
+    "path": "package-lock.json",
+    "type": "json",
+    "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/package-lock.json"
+  },
+  {
+    "itemName": "package.json",
+    "path": "package.json",
+    "type": "json",
+    "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/package.json"
+  },
+  {
+    "itemName": "postcss.config.js",
+    "path": "postcss.config.js",
+    "type": "js",
+    "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/postcss.config.js"
+  },
+  {
+    "itemName": "public",
+    "path": "public",
+    "type": "dir",
+    "contents": [
+      {
+        "itemName": "vite.svg",
+        "path": "public/vite.svg",
+        "type": "svg",
+        "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/public/vite.svg"
+      }
+    ]
+  },
+  {
+    "itemName": "src",
+    "path": "src",
+    "type": "dir",
+    "contents": [
+      {
+        "itemName": "App.tsx",
+        "path": "src/App.tsx",
+        "type": "tsx",
+        "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/src/App.tsx"
+      },
+      {
+        "itemName": "assets",
+        "path": "src/assets",
+        "type": "dir",
+        "contents": [
+          {
+            "itemName": "day.svg",
+            "path": "src/assets/day.svg",
+            "type": "svg",
+            "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/src/assets/day.svg"
+          },
+          {
+            "itemName": "duration.svg",
+            "path": "src/assets/duration.svg",
+            "type": "svg",
+            "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/src/assets/duration.svg"
+          },
+          {
+            "itemName": "earnings.svg",
+            "path": "src/assets/earnings.svg",
+            "type": "svg",
+            "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/src/assets/earnings.svg"
+          },
+          {
+            "itemName": "start.svg",
+            "path": "src/assets/start.svg",
+            "type": "svg",
+            "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/src/assets/start.svg"
+          },
+          {
+            "itemName": "stop.svg",
+            "path": "src/assets/stop.svg",
+            "type": "svg",
+            "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/src/assets/stop.svg"
+          }
+        ]
+      },
+      {
+        "itemName": "components",
+        "path": "src/components",
+        "type": "dir",
+        "contents": [
+          {
+            "itemName": "Layout.tsx",
+            "path": "src/components/Layout.tsx",
+            "type": "tsx",
+            "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/src/components/Layout.tsx"
+          },
+          {
+            "itemName": "Navbar.tsx",
+            "path": "src/components/Navbar.tsx",
+            "type": "tsx",
+            "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/src/components/Navbar.tsx"
+          },
+          {
+            "itemName": "SheetHeader.tsx",
+            "path": "src/components/SheetHeader.tsx",
+            "type": "tsx",
+            "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/src/components/SheetHeader.tsx"
+          },
+          {
+            "itemName": "WorkSummaryPanel.tsx",
+            "path": "src/components/WorkSummaryPanel.tsx",
+            "type": "tsx",
+            "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/src/components/WorkSummaryPanel.tsx"
+          }
+        ]
+      },
+      {
+        "itemName": "index.css",
+        "path": "src/index.css",
+        "type": "css",
+        "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/src/index.css"
+      },
+      {
+        "itemName": "main.tsx",
+        "path": "src/main.tsx",
+        "type": "tsx",
+        "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/src/main.tsx"
+      },
+      {
+        "itemName": "utils",
+        "path": "src/utils",
+        "type": "dir",
+        "contents": [
+          {
+            "itemName": "calculateTimeDifference.tsx",
+            "path": "src/utils/calculateTimeDifference.tsx",
+            "type": "tsx",
+            "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/src/utils/calculateTimeDifference.tsx"
+          }
+        ]
+      },
+      {
+        "itemName": "vite-env.d.ts",
+        "path": "src/vite-env.d.ts",
+        "type": "tsx",
+        "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/src/vite-env.d.ts"
+      }
+    ]
+  },
+  {
+    "itemName": "tailwind.config.js",
+    "path": "tailwind.config.js",
+    "type": "js",
+    "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/tailwind.config.js"
+  },
+  {
+    "itemName": "tsconfig.json",
+    "path": "tsconfig.json",
+    "type": "tsconfig",
+    "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/tsconfig.json"
+  },
+  {
+    "itemName": "tsconfig.node.json",
+    "path": "tsconfig.node.json",
+    "type": "json",
+    "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/tsconfig.node.json"
+  },
+  {
+    "itemName": "vite.config.ts",
+    "path": "vite.config.ts",
+    "type": "ts",
+    "url": "https://raw.githubusercontent.com/dmm22/time-sheet/master/vite.config.ts"
+  }
+]
