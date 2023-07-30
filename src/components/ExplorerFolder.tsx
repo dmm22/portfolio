@@ -7,5 +7,18 @@ interface ExplorerFolderProps {
 
 export default function ExplorerFolder({ folderName }: ExplorerFolderProps) {
   const [src, setSrc] = useState(() => `folder-${folderName}`)
-  return <Svg svgName={src} classes="h-5" />
+
+  function toggleFolder() {
+    setSrc(src =>
+      src === `folder-${folderName}`
+        ? `folder-${folderName}-open`
+        : `folder-${folderName}`
+    )
+  }
+
+  return (
+    <span onClick={toggleFolder}>
+      <Svg svgName={src} classes="h-5 cursor-pointer" />
+    </span>
+  )
 }
