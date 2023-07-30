@@ -4,7 +4,7 @@ interface FolderItem {
   itemName: string
   path: string
   type: string
-  contents: FileItem[]
+  contents: (FileItem | FolderItem)[]
 }
 
 export default FolderItem

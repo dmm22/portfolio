@@ -8,6 +8,23 @@ interface ExplorerItemProps {
 }
 
 export default function ExplorerItem({ item }: ExplorerItemProps) {
-  if (item.type === "dir") return <ExplorerFolder folderName={item.itemName} />
-  else return <Svg svgName={item.type} classes="h-5" />
+  function getItemMargin() {
+    const slashCount = item.path.split("/").length - 1
+    return slashCount * 2
+  }
+
+  return (
+    <div className="my-0.5 cursor-pointer">
+      {item.type === "dir" ? (
+        <ExplorerFolder folder={item as FolderItem} />
+      ) : (
+        <div className="flex hover:bg-highlight">
+          <Svg svgName={item.type} classes="h-5" />
+          <span className="text-sm text-primary-text ml-1">
+            {item.itemName}
+          </span>
+        </div>
+      )}
+    </div>
+  )
 }
