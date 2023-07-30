@@ -18,7 +18,7 @@
     "url": "https://raw.githubusercontent.com/dmm22/typing/main/.gitignore"
   },
   {
-    "itemName": ".vscode",
+    "itemName": "vscode",
     "path": ".vscode",
     "type": "dir",
     "contents": [
