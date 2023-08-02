@@ -12,30 +12,10 @@ export default function Explorer() {
   const { repository, switchRepository } = useContext(CodeContext)
 
   return (
-    <>
-      <button
-        className="m-2 bg-white text-black p-1 rounded"
-        onClick={() => switchRepository("notes")}
-      >
-        notes
-      </button>
-      <button
-        className="m-2 bg-white text-black p-1 rounded"
-        onClick={() => switchRepository("typing")}
-      >
-        typing
-      </button>
-      <button
-        className="m-2 bg-white text-black p-1 rounded"
-        onClick={() => switchRepository("timeSheet")}
-      >
-        time sheet
-      </button>
-      <div className="bg-secondary-bg">
-        {repository.map(item => (
-          <ExplorerItem item={item as FileItem | FolderItem} />
-        ))}
-      </div>
-    </>
+    <div className="bg-secondary-bg w-48">
+      {repository.map(item => (
+        <ExplorerItem item={item as FileItem | FolderItem} />
+      ))}
+    </div>
   )
 }

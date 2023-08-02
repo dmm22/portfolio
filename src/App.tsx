@@ -5,7 +5,7 @@ import CodeContextProvider from "./contexts/CodeContext"
 export default function App() {
   return (
     <CodeContextProvider>
-      <div>
+      <div className="flex">
         <Explorer />
         <Code />
       </div>
