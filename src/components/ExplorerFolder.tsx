@@ -27,7 +27,14 @@ export default function ExplorerFolder({
 
   return (
     <div className="flex flex-col">
-      <div onClick={toggleFolder} className="flex hover:bg-highlight">
+      <div
+        onClick={toggleFolder}
+        className="flex hover:bg-highlight items-center"
+      >
+        <Svg
+          svgName={`${/open/g.test(src) ? "collapse" : "expand"}`}
+          classes="h-3 mr-1"
+        />
         <Svg svgName={src} classes="h-5" />
         <span className="text-sm text-primary-text ml-1">{itemName}</span>
       </div>

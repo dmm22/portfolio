@@ -19,7 +19,7 @@ export default function ExplorerItem({ item }: ExplorerItemProps) {
         <ExplorerFolder folder={item as FolderItem} />
       ) : (
         <div className="flex hover:bg-highlight">
-          <Svg svgName={item.type} classes="h-5" />
+          <Svg svgName={item.type} classes="h-5 ml-4" />
           <span className="text-sm text-primary-text ml-1">
             {item.itemName}
           </span>
