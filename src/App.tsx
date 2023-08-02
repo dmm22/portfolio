@@ -1,10 +1,12 @@
 import Explorer from "./components/Explorer"
-import Svg from "./components/Svg"
+import CodeContextProvider from "./contexts/CodeContext"
 
 export default function App() {
   return (
-    <div>
-      <Explorer />
-    </div>
+    <CodeContextProvider>
+      <div>
+        <Explorer />
+      </div>
+    </CodeContextProvider>
   )
 }
