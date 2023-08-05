@@ -8,9 +8,9 @@ import CodeContextProvider from "./contexts/CodeContext"
 export default function App() {
   return (
     <CodeContextProvider>
-      <div>
+      <div className="h-screen">
         <ProjectViewToggler />
-        <div className="flex">
+        <div className="flex h-full">
           <RepositorySelector />
           <div className="flex flex-col flex-1">
             <ProjectInfoBar />
