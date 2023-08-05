@@ -33,15 +33,17 @@ export default function ProjectViewToggler() {
               Interactive View
             </span>
           </div>
-          <div
-            onClick={() => setViewMode("interactive")}
+          <a
+            href="https://github.com/dmm22?tab=repositories"
             className="flex flex-col justify-center w-fit cursor-pointer"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <Svg svgName="github" classes="h-5" />
             <span className="text-xs font-medium text-primary-text">
               Github
             </span>
-          </div>
+          </a>
         </div>
       </div>
       <hr className="border-gray-200 border-opacity-30 pb-2" />

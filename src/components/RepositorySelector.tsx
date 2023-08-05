@@ -7,7 +7,7 @@ export default function RepositorySelector() {
 
   return (
     <div className="flex flex-col gap-8 px-2">
-      <h2 className="font-semibold text-primary-text">Projects</h2>
+      <h2 className="font-bold text-primary-text underline">Projects</h2>
       <div
         onClick={() => switchRepository("notes")}
         className="flex justify-center flex-col w-min mx-auto cursor-pointer"

@@ -52,7 +52,7 @@ export default function CodeContextProvider({
   children: JSX.Element | JSX.Element[]
 }) {
   const [repository, setRepository] = useState(repositories.typing)
-  const [viewMode, setViewMode] = useState<ViewMode>("interactive")
+  const [viewMode, setViewMode] = useState<ViewMode>("code")
   const [currentFile, setCurrentFile] = useState({
     itemName: "NoteContext.tsx",
     path: "src/contexts/NoteContext.tsx",

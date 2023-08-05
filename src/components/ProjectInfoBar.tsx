@@ -31,7 +31,7 @@ export default function ProjectInfoBar() {
 
   return (
     <div className="bg-primary-bg w-max flex text-primary-text pl-2 pb-1 pt-1">
-      <small className="w-48 font-bold">{repository.title}</small>
+      <small className="w-48 font-bold pl-2">{repository.title}</small>
       <div className="flex items-center">{getFilePathJsx()}</div>
     </div>
   )
