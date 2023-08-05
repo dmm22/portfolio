@@ -7,6 +7,8 @@ import FileItem from "../types/FileItem"
 
 type Repository = { title: string; data: typeof notes; url: string }
 
+type ViewMode = "interactive" | "code"
+
 interface Repositories {
   notes: Repository
   timeSheet: Repository
@@ -18,6 +20,8 @@ interface CodeContextInterface {
   switchRepository: (newRepository: RepositoryName) => void
   currentFile: FileItem
   setCurrentFile: React.Dispatch<SetStateAction<FileItem>>
+  viewMode: ViewMode
+  setViewMode: React.Dispatch<SetStateAction<ViewMode>>
 }
 
 export const CodeContext = createContext<CodeContextInterface>(
@@ -48,6 +52,7 @@ export default function CodeContextProvider({
   children: JSX.Element | JSX.Element[]
 }) {
   const [repository, setRepository] = useState(repositories.typing)
+  const [viewMode, setViewMode] = useState<ViewMode>("interactive")
   const [currentFile, setCurrentFile] = useState({
     itemName: "NoteContext.tsx",
     path: "src/contexts/NoteContext.tsx",
@@ -66,6 +71,8 @@ export default function CodeContextProvider({
         switchRepository,
         currentFile,
         setCurrentFile,
+        viewMode,
+        setViewMode,
       }}
     >
       {children}

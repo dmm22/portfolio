@@ -10,13 +10,17 @@ interface ExplorerItemProps {
 }
 
 export default function ExplorerItem({ item }: ExplorerItemProps) {
-  const { setCurrentFile } = useContext(CodeContext)
+  const { setCurrentFile, setViewMode } = useContext(CodeContext)
+
+  function handleItemClick() {
+    if ("url" in item) {
+      setCurrentFile(item)
+      setViewMode("code")
+    }
+  }
 
   return (
-    <div
-      onClick={() => "url" in item && setCurrentFile(item)}
-      className="my-0.5 cursor-pointer"
-    >
+    <div onClick={handleItemClick} className="my-0.5 cursor-pointer">
       {item.type === "dir" ? (
         <ExplorerFolder folder={item as FolderItem} />
       ) : (
