@@ -9,7 +9,7 @@ export default function Explorer() {
   const { repository } = useContext(CodeContext)
 
   return (
-    <div className="bg-secondary-bg w-48">
+    <div className="bg-secondary-bg w-48 px-1">
       {repository.data.map(item => (
         <ExplorerItem item={item as FileItem | FolderItem} />
       ))}

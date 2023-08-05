@@ -6,7 +6,7 @@ export default function Interactive() {
   return (
     <iframe
       src={repository.url}
-      className="w-full h-screen overflow-hidden"
+      className="w-full h-screen overflow-hidden bg-white"
     ></iframe>
   )
 }
