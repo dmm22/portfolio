@@ -5,7 +5,7 @@ import { createContext, useState, SetStateAction } from "react"
 import RepositoryName from "../types/RepositoryName"
 import FileItem from "../types/FileItem"
 
-type Repository = { title: string; data: typeof notes }
+type Repository = { title: string; data: typeof notes; url: string }
 
 interface Repositories {
   notes: Repository
@@ -25,9 +25,21 @@ export const CodeContext = createContext<CodeContextInterface>(
 )
 
 const repositories: Repositories = {
-  notes: { title: "Notes", data: notes },
-  timeSheet: { title: "TimeSheet", data: timeSheet },
-  typing: { title: "Typing", data: typing },
+  notes: {
+    title: "Notes",
+    data: notes,
+    url: "https://64ce698bdad64a4b9a2bab6f--glittery-lebkuchen-f018d5.netlify.app/",
+  },
+  timeSheet: {
+    title: "TimeSheet",
+    data: timeSheet,
+    url: "https://64ce6738d144564bdaf62166--luxury-klepon-819239.netlify.app/",
+  },
+  typing: {
+    title: "Typing",
+    data: typing,
+    url: "https://www.customtypingpractice.com/",
+  },
 }
 
 export default function CodeContextProvider({
@@ -35,7 +47,7 @@ export default function CodeContextProvider({
 }: {
   children: JSX.Element | JSX.Element[]
 }) {
-  const [repository, setRepository] = useState(repositories.notes)
+  const [repository, setRepository] = useState(repositories.typing)
   const [currentFile, setCurrentFile] = useState({
     itemName: "NoteContext.tsx",
     path: "src/contexts/NoteContext.tsx",

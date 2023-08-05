@@ -6,7 +6,6 @@ export default function ProjectInfoBar() {
   const { currentFile, repository } = useContext(CodeContext)
 
   useEffect(() => {
-    console.log(currentFile)
     getFilePathJsx()
   }, [])
 
