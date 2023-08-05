@@ -10,11 +10,11 @@ interface ExplorerItemProps {
 }
 
 export default function ExplorerItem({ item }: ExplorerItemProps) {
-  const { switchCurrentCode } = useContext(CodeContext)
+  const { setCurrentFile } = useContext(CodeContext)
 
   return (
     <div
-      onClick={() => "url" in item && switchCurrentCode(item.url)}
+      onClick={() => "url" in item && setCurrentFile(item)}
       className="my-0.5 cursor-pointer"
     >
       {item.type === "dir" ? (
