@@ -1,12 +1,17 @@
 import notes from "../data/notes.json"
 import timeSheet from "../data/timeSheet.json"
 import typing from "../data/typing.json"
-import { createContext, useState, useEffect, SetStateAction } from "react"
+import { createContext, useState, SetStateAction } from "react"
 import RepositoryName from "../types/RepositoryName"
-import getCode from "../adapters/getCode"
 import FileItem from "../types/FileItem"
 
-type Repository = typeof notes
+type Repository = { title: string; data: typeof notes }
+
+interface Repositories {
+  notes: Repository
+  timeSheet: Repository
+  typing: Repository
+}
 
 interface CodeContextInterface {
   repository: Repository
@@ -19,14 +24,18 @@ export const CodeContext = createContext<CodeContextInterface>(
   {} as CodeContextInterface
 )
 
-const repositories = { notes, timeSheet, typing }
+const repositories: Repositories = {
+  notes: { title: "Notes", data: notes },
+  timeSheet: { title: "TimeSheet", data: timeSheet },
+  typing: { title: "Typing", data: typing },
+}
 
 export default function CodeContextProvider({
   children,
 }: {
   children: JSX.Element | JSX.Element[]
 }) {
-  const [repository, setRepository] = useState(notes)
+  const [repository, setRepository] = useState(repositories.notes)
   const [currentFile, setCurrentFile] = useState({
     itemName: "NoteContext.tsx",
     path: "src/contexts/NoteContext.tsx",
