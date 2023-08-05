@@ -11,6 +11,7 @@ interface CodeContextInterface {
   repository: Repository
   switchRepository: (newRepository: RepositoryName) => void
   currentCode: string
+  switchCurrentCode: (url: string) => void
 }
 
 export const CodeContext = createContext<CodeContextInterface>(
@@ -41,12 +42,17 @@ export default function CodeContextProvider({
     setRepository(repositories[newRepository])
   }
 
+  async function switchCurrentCode(url: string) {
+    setCurrentCode(await getCode(url))
+  }
+
   return (
     <CodeContext.Provider
       value={{
         repository,
         switchRepository,
         currentCode,
+        switchCurrentCode,
       }}
     >
       {children}
