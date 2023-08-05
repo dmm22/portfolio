@@ -1,17 +1,18 @@
 import notes from "../data/notes.json"
 import timeSheet from "../data/timeSheet.json"
 import typing from "../data/typing.json"
-import { createContext, useState, useEffect } from "react"
+import { createContext, useState, useEffect, SetStateAction } from "react"
 import RepositoryName from "../types/RepositoryName"
 import getCode from "../adapters/getCode"
+import FileItem from "../types/FileItem"
 
 type Repository = typeof notes
 
 interface CodeContextInterface {
   repository: Repository
   switchRepository: (newRepository: RepositoryName) => void
-  currentCode: string
-  switchCurrentCode: (url: string) => void
+  currentFile: FileItem
+  setCurrentFile: React.Dispatch<SetStateAction<FileItem>>
 }
 
 export const CodeContext = createContext<CodeContextInterface>(
@@ -26,24 +27,15 @@ export default function CodeContextProvider({
   children: JSX.Element | JSX.Element[]
 }) {
   const [repository, setRepository] = useState(notes)
-  const [currentCode, setCurrentCode] = useState("")
-
-  useEffect(() => {
-    ;(async () => {
-      const noteContextUrl =
-        "https://raw.githubusercontent.com/dmm22/notes/master/src/contexts/NoteContext.tsx"
-
-      const startingCode = await getCode(noteContextUrl)
-      setCurrentCode(startingCode)
-    })()
-  }, [])
+  const [currentFile, setCurrentFile] = useState({
+    itemName: "NoteContext.tsx",
+    path: "src/contexts/NoteContext.tsx",
+    type: "tsx",
+    url: "https://raw.githubusercontent.com/dmm22/notes/master/src/contexts/NoteContext.tsx",
+  })
 
   function switchRepository(newRepository: RepositoryName) {
     setRepository(repositories[newRepository])
-  }
-
-  async function switchCurrentCode(url: string) {
-    setCurrentCode(await getCode(url))
   }
 
   return (
@@ -51,8 +43,8 @@ export default function CodeContextProvider({
       value={{
         repository,
         switchRepository,
-        currentCode,
-        switchCurrentCode,
+        currentFile,
+        setCurrentFile,
       }}
     >
       {children}
