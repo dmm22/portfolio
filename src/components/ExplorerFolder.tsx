@@ -33,9 +33,9 @@ export default function ExplorerFolder({
       >
         <Svg
           svgName={`${/open/g.test(src) ? "collapse" : "expand"}`}
-          classes="h-3 mr-1"
+          classes="h-2 mr-1"
         />
-        <Svg svgName={src} classes="h-5" />
+        <Svg svgName={src} classes="h-4" />
         <span className="text-sm text-primary-text ml-1">{itemName}</span>
       </div>
       <div style={{ marginLeft: `${getItemMargin(contents[0].path)}rem` }}>

@@ -7,8 +7,15 @@ export default function Code() {
   const { currentCode } = useContext(CodeContext)
 
   return (
-    <SyntaxHighlighter language="typescript" style={atomOneDark}>
-      {currentCode}
-    </SyntaxHighlighter>
+    <div className="text-sm">
+      <SyntaxHighlighter
+        language="typescript"
+        style={atomOneDark}
+        showLineNumbers={true}
+        lineNumberStyle={{ color: "#5c6370" }}
+      >
+        {currentCode}
+      </SyntaxHighlighter>
+    </div>
   )
 }
