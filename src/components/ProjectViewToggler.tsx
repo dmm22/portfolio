@@ -9,9 +9,7 @@ export default function ProjectViewToggler() {
     <div className="flex flex-col">
       <div className="flex p-2">
         <div className="flex flex-col" style={{ color: "#d7b56e" }}>
-          <h1 className="text-lg leading-tight font-bold text-center">
-            David Martin
-          </h1>
+          <h1 className="text-lg leading-tight font-bold text-center">David Martin</h1>
           <h2 className="text-xs leading-tight text-center">Web Developer</h2>
         </div>
         <div className="flex gap-7 mx-auto">
@@ -40,9 +38,7 @@ export default function ProjectViewToggler() {
             rel="noopener noreferrer"
           >
             <Svg svgName="github" classes="h-5" />
-            <span className="text-xs font-medium text-primary-text">
-              Github
-            </span>
+            <span className="text-xs font-medium text-primary-text">Github</span>
           </a>
         </div>
       </div>
