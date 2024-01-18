@@ -24,9 +24,7 @@ interface CodeContextInterface {
   setViewMode: React.Dispatch<SetStateAction<ViewMode>>
 }
 
-export const CodeContext = createContext<CodeContextInterface>(
-  {} as CodeContextInterface
-)
+export const CodeContext = createContext<CodeContextInterface>({} as CodeContextInterface)
 
 const repositories: Repositories = {
   notes: {
